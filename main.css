@@ -1,0 +1,20 @@
+body{
+  margin:0;
+  box-sizing:border-box;
+}
+
+.twentyfive{
+  display:flex;
+  /*the above width/ height devided by 2*/
+  width:100vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.twentyfive img{
+ /*above height/width devided by 5*/
+ width:20vw;
+ height:20vh;
+}
