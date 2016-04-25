@@ -22,4 +22,7 @@
   1. refresh the `index.html` page in your browser to see your images appear.
 
 ### Orientation of the grid to filenames `1.jpg, 2.jpg, 3.jpg, etc.`
+Single version
 ![grid.png](grid.png)
+Multi Version
+![biggrid.png](biggrid.png)
