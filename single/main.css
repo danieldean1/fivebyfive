@@ -54,6 +54,6 @@ max-height: 100%;
 }
 
 .pop img{
-  max-height: 100vh;
+  height: 100vh;
   opacity: 1;
 }
