@@ -1,59 +1,134 @@
-*{  box-sizing:border-box;}
+* {
+  box-sizing: border-box;
+}
 
-body, html{
+body,
+html {
   background-color: white;
-  margin:0;
-  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-.twentyfive{
-  display:flex;
-  width:100vw;
+#infoicon {
+  width: 2.5vmin;
+  position: fixed;
+  top: 1.5%;
+  right: 1%;
+  filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.5));
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
+
+#infoicon:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.twentyfive {
+  display: flex;
+  width: 100vw;
   height: 100vh;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.twentyfive img{
-max-width: 100%;
-max-height: 100%;
+.twentyfive img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.inner{
+.inner {
   width: 20vw;
   height: 20vh;
   text-align: center;
-    /*border: 1px solid blue;*/
+  cursor: pointer;
+    /* border: 1px solid blue; */
 }
 
-
-.pop{
-  position:fixed;
-  top:0;
-  left:0;
+.pop {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  display:flex;
+  display: flex;
   align-content: center;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-.popblur{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
-  opacity: .8;
+.popblur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
   background-color: white;
 }
 
-.pop img{
+.pop img {
   height: 100vh;
   opacity: 1;
+}
+
+/* ~~~~~~~~~~~~~~~ About Page Styling ~~~~~~~~~~~~~~~~ */
+.infopage {
+margin: 0;
+display: flex;
+flex-flow: column;
+justify-content: space-around;
+align-items: center;
+font-family: Futura, sans-serif;
+}
+
+.content {
+  width: 70%;
+  min-width: 400px;
+  margin: 5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3 {
+  font-size: 3vmax;
+  font-style: oblique;
+  color: #272828;
+}
+
+h4 {
+  font-size: 1vmax;
+  width: 3vmin;
+  position: fixed;
+  top: 0px;
+  right: 25px;
+  color: #515454;
+  filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.5));
+}
+
+p {
+  font-size: 3vmax;
+  color: #272828;
+}
+
+a {
+  text-decoration: none;
+  color: #272828;
+}
+
+#back {
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+#back:hover {
+  opacity: 1;
+  transform: scale(1.5);
 }
